@@ -25,7 +25,7 @@ def wet():
     return render_template('wet.html')
 
 
-@app.route("/waste/", methods=["POST"])
+@app.route("/waste", methods=["POST"])
 def result():
     subject = request.form.get("topic")
     data = getDirt(subject)
